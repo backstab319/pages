@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loging page 1.0</title>
+    <meta charset="utf-8">
+    <style>
+        #par0{
+            text-align: center;
+            color: dimgray;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: oblique;
+        }
+        .general{
+            text-align: center;
+            color: grey;
+            font-style: oblique;
+        }
+        .inp{
+            padding: 30px;
+            border-radius: 40px;
+            border-style: solid;
+            text-align: center;
+            font-weight: bold;
+        }
+        .inpdec{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="par0">This is a work in progress.This is a login page made using html, css, javascript.</p>
+    <h1 class="general">Login</h1>
+    <div class="inpdec">
+    <input type="text" placeholder="Email" id="email" size="20px" class="inp">
+        <br/>
+    <input type="password" placeholder="Password" id="password" size="20px" class="inp">
+        <br>
+    <input type="submit" value="Go!" id="login" class="inp" onclick="onlogin()">
+    </div>
+    
+    
+    <script type="text/javascript">
+        function onlogin(){
+            var email = document.getElementById('email').value, password = document.getElementById("password").value;
+            if((email && password) === "")
+                {
+                    alert("Please check both the fields before proceeding.");
+                }else if((email && password) == "test"){
+                    alert("Welcome test!");
+                }else{
+                    alert("Wrong credentials! Please try again!"); document.getElementById("email").value = ""; document.getElementById("password").value = ""; document.getElementById("email").focus();
+                }
+        }
+    </script>
+</body>
+</html>
