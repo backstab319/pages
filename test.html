@@ -1,57 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Loging page 1.0</title>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <style>
-        #par0{
-            text-align: center;
-            color: dimgray;
-            font-size: 20px;
-            font-weight: bold;
-            font-style: oblique;
-        }
-        .general{
-            text-align: center;
-            color: grey;
-            font-style: oblique;
-        }
-        .inp{
-            padding: 30px;
-            border-radius: 40px;
-            border-style: solid;
-            text-align: center;
-            font-weight: bold;
-        }
-        .inpdec{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <p id="par0">This is a work in progress.This is a login page made using html, css, javascript.</p>
-    <h1 class="general">Login</h1>
-    <div class="inpdec">
-    <input type="text" placeholder="Email" id="email" size="20px" class="inp">
-        <br/>
-    <input type="password" placeholder="Password" id="password" size="20px" class="inp">
-        <br>
-    <input type="submit" value="Go!" id="login" class="inp" onclick="onlogin()">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>backstab319@github</title>
+  </head>
+  <body>
+    <div class="container d-flex flex-container">
+        <div class="container-fluid d-flex align-items-center">
+            <h1 class="h1 text-primary">Lets have a look</h1>
+        </div>
     </div>
+
     
-    
-    <script type="text/javascript">
-        function onlogin(){
-            var email = document.getElementById('email').value, password = document.getElementById("password").value;
-            if((email && password) === "")
-                {
-                    alert("Please check both the fields before proceeding.");
-                }else if((email && password) == "test"){
-                    alert("Welcome test!");
-                }else{
-                    alert("Wrong credentials! Please try again!"); document.getElementById("email").value = ""; document.getElementById("password").value = ""; document.getElementById("email").focus();
-                }
-        }
-    </script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
